@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: crosshair;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.canvas {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(ellipse, rgb(64,22,143) 0%, rgb(32,14,96) 40%, rgb(10,0,34) 100%);
+  perspective: 850px; /* double check how perspective works */
+}
+
+.cube {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  transform-origin: 50% 50% 150px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-out;
+  /*background-color: beige;*/
+}
+
+
+.cube .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* display: flex needed to center numbers */
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: transparent; 
+  -webkit-text-stroke: 5px white;
+}
+
+.cube .face:nth-child(1) {
+  transform: translateZ(300px); /* check into translate Z */
+  background-color: rgb(238, 141, 14, 0.5);
+}
+.cube .face:nth-child(2) {
+  transform-origin: center right;
+  transform: rotateY(90deg);
+  background-color: rgb(95, 158, 160, 0.5);
+}
+.cube .face:nth-child(3) {
+  transform-origin: center center;
+  transform: rotateY(180deg);
+  background-color: rgb(225, 127, 80, 0.5);
+}
+.cube .face:nth-child(4) {
+  transform-origin: center left;
+  transform: rotateY(-90deg);
+  background-color: rgb(0, 100, 0, 0.5);
+}
+.cube .face:nth-child(5) {
+  transform-origin: top center;
+  transform: rotateX(90deg);
+  background-color: rgba(130, 149, 25, 0.5);
+}
+.cube .face:nth-child(6) {
+  transform-origin: bottom center;
+  transform: rotateX(-90deg);
+  background-color: rgba(160, 95, 137, 0.5);
+}
