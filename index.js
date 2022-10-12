@@ -18,25 +18,9 @@ function rotateCube(event) {
   }
 }
 
-// function rightSideUp() {
-//   x += 90;
-//   y += 90;
-//   //cube[0].style.transform = "rotateY(" + x + "deg) rotateX(" + y + "deg)";
-//   //cube[0].style.transform = "rotateY(" + x + "deg)";
-//   cube[0].style.transform = "rotateX(" + y + "deg)";
-// }
-
-function rotateX() {
-  x += 90;
-  cube[0].style.transform = "rotateX(" + x + "deg)";
-}
-function rotateY() {
-  y += 90;
-  cube[0].style.transform = "rotateY(" + y + "deg)";
-}
-function rotateZ() {
-  z += 90;
-  cube[0].style.transform = "rotateZ(" + z + "deg)";
+function rotate(xDeg, yDeg, zDeg) {
+  x += xDeg, y += yDeg, z += zDeg;
+  cube[0].style.transform = `rotateX(${y}deg) rotateY(${x}deg) rotateZ(${z}deg)`;
 }
 
 $(".cube").mousedown(function () {

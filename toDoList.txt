@@ -1,2 +1,14 @@
-// add individual rotation functions
-// get buttons to show and not overlap
+// add individual rotation functions - completed
+// get buttons to show and not overlap - completed by putting within a div
+// fix x move left/right, y move up/down - completed
+// fix rotation buttons to register changes to x, y, z as well
+//// from start (1) - x moves to 6, y moves to 4, z rotates to the right
+///// x should also change y,z
+/////// x should always bring bottom side up
+///// y should also change x,z
+/////// y should always bring left side right
+///// z should also change x,y
+/////// y should always rotate current side clockwise
+// fix how y, z degrees interact on certain faces
+//// faces 1 and 3 work fine, 
+//// issue with faces, 2/4/5/6
