@@ -4,17 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Moving 3D Cube</title>
   </header>
   <body>
     <div class="canvas">
       <div class="cube">
-        <div class="face">1</div>
-        <div class="face">2</div>
-        <div class="face">3</div>
-        <div class="face">4</div>
-        <div class="face">5</div>
-        <div class="face">6</div>
+        <div class="face"><a href="https://www.google.com/search?q=1&sxsrf=ALiCzsZyYxScGnTmaAC6akySrtUk1UQK5g%3A1665558831316&ei=L2lGY7zwEqurqtsPst6VkAw&ved=0ahUKEwj8w_iTktr6AhWrlWoFHTJvBcIQ4dUDCA4&uact=5&oq=1&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgAEEMyBAguEEMyBQgAEIAEMhEILhCABBCxAxCDARDHARDRAzILCAAQgAQQsQMQgwEyBQguEIAEMggILhCABBDUAjIICAAQgAQQsQM6BwgjELADECc6CAgAELADEJECOgcIABCwAxBDOgkIABAHEB4QsAM6CAgAEIAEELADOg0IABDkAhDWBBCwAxgBOg8ILhDUAhDIAxCwAxBDGAI6DAguEMgDELADEEMYAjoWCC4QgAQQsQMQxwEQ0QMQyAMQsAMYAkoECE0YAUoECEEYAUoECEYYAVDjCVjjCWDPCmgBcAB4AIABQ4gBQ5IBATGYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz" target="_blank">1</a></div>
+        <div class="face"><a href="https://www.google.com/search?q=2&sxsrf=ALiCzsYB2W6_5jNskV7O99ju-SyRESja4w%3A1665558825980&ei=KWlGY8CzO6SvqtsPs_ys-Ac&ved=0ahUKEwiA7LKRktr6AhWkl2oFHTM-C38Q4dUDCA4&uact=5&oq=2&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyBAgAEEMyDgguEIAEELEDEMcBENEDMgUIABCABDILCAAQgAQQsQMQgwEyDgguEIAEELEDEMcBENEDMgUILhCABDIFCC4QgARKBAhBGABKBAhGGABQAFgAYIsCaABwAHgAgAFNiAFNkgEBMZgBAKABAcABAQ&sclient=gws-wiz" target="_blank">2</a></div>
+        <div class="face"><a href="https://www.google.com/search?q=3&sxsrf=ALiCzsbv9vRwl7dpIMI1xRk7kQc-jNYGsw%3A1665558904315&ei=eGlGY8jnEpa2qtsP9q6R4Ac&ved=0ahUKEwjIg-C2ktr6AhUWm2oFHXZXBHwQ4dUDCA4&uact=5&oq=3&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCgguELEDEIMBEEMyBQgAEIAEMgUIABCABDILCAAQgAQQsQMQgwEyCwguEIAEELEDENQCMgsIABCABBCxAxCDATIICAAQgAQQsQMyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDAUoECEEYAEoECEYYAFAAWABgwAFoAHAAeACAAUyIAUySAQExmAEAoAEBwAEB&sclient=gws-wiz" target="_blank">3</a></div>
+        <div class="face"><a href="https://www.google.com/search?q=4&sxsrf=ALiCzsa3Eu8EEK3Zg77HHvScTBr1wo5ZaA%3A1665558910583&ei=fmlGY_yUI-ezqtsPm9uPiAE&ved=0ahUKEwj8y965ktr6AhXnmWoFHZvtAxEQ4dUDCA4&uact=5&oq=4&gs_lcp=Cgdnd3Mtd2l6EAMyCggAELEDEIMBEEMyDQguELEDEIMBENQCEEMyBQguEIAEMgsILhCABBCxAxCDATIFCAAQgAQyBQgAEIAEMggIABCxAxCDATIFCAAQgAQyBQguEIAEMgUIABCABEoECEEYAEoECEYYAFAAWABgpAJoAHAAeACAAUaIAUaSAQExmAEAoAEBwAEB&sclient=gws-wiz" target="_blank">4</a></div>
+        <div class="face"><a href="https://www.google.com/search?q=5&sxsrf=ALiCzsaR7btq12BYAvFcu8vfxswVPRRLFw%3A1665558916785&ei=hGlGY5zBL4uhqtsP3a-w8A4&ved=0ahUKEwick9m8ktr6AhWLkGoFHd0XDO4Q4dUDCA4&uact=5&oq=5&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgAEEMyDgguEIAEELEDEMcBENEDMgsILhCABBCxAxCDATIFCAAQgAQyCwgAEIAEELEDEIMBMgsILhCABBCxAxCDATILCAAQgAQQsQMQgwEyCAgAELEDEIMBMgsIABCABBCxAxCDAUoECE0YAUoECEEYAEoECEYYAFAAWABggwFoAHAAeACAAU2IAU2SAQExmAEAoAEBwAEB&sclient=gws-wiz" target="_blank">5</a></div>
+        <div class="face"><a href="https://www.google.com/search?q=6&sxsrf=ALiCzsYhz-orlVqq72-HmpPv_lQh9RXfLA%3A1665558926101&ei=jmlGY7zpBa-3qtsPqIO30A0&ved=0ahUKEwi86JHBktr6AhWvm2oFHajBDdoQ4dUDCA4&uact=5&oq=6&gs_lcp=Cgdnd3Mtd2l6EAMyCggAELEDEIMBEEMyCAguEIAEELEDMggIABCxAxCDATIFCAAQgAQyCwgAEIAEELEDEIMBMggIABCxAxCDATIRCC4QgAQQsQMQgwEQxwEQ0QMyCwguEIAEELEDEIMBMggIABCABBCxAzIICAAQsQMQgwFKBAhNGAFKBAhBGABKBAhGGABQAFgAYNQCaABwAHgAgAFKiAFKkgEBMZgBAKABAcABAQ&sclient=gws-wiz" target="_blank">6</a></div>
       </div>
     </div>
     <script src="index.js"></script>
