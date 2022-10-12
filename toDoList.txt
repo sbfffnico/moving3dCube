@@ -12,3 +12,11 @@
 // fix how y, z degrees interact on certain faces
 //// faces 1 and 3 work fine, 
 //// issue with faces, 2/4/5/6
+////// on face 4, y and z do the same thing
+
+.cube rotateY(90deg) gives face4 starting
+
+// possible help: https://stackoverflow.com/questions/66808899/problem-keeping-a-3d-cube-correctly-roll-on-its-edges-using-rotate-and-translate
+
+http://jsfiddle.net/4Rd6x/
+

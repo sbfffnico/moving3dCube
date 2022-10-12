@@ -4,7 +4,6 @@ html, body {
   width: 100%;
   height: 100vh;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  cursor: crosshair;
 }
 
 * {
@@ -62,6 +61,9 @@ html, body {
   transform-style: preserve-3d;
   transition: all 0.5s ease-out;
   /*background-color: beige;*/
+  cursor: crosshair;
+  /*for testing*/
+  transform: rotateY(0deg) rotateZ(0deg);
 }
 
 
