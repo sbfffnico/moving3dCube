@@ -1,0 +1,2 @@
+// add individual rotation functions
+// get buttons to show and not overlap
