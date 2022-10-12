@@ -39,25 +39,12 @@ html, body {
   left: 50vw;
   transform: translate(-50%);
 }
-.center {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 50vw;
-  transform: translate(-50%);
-}
-.center:nth-child(2) {
-  top: 50;
-}
-.center:nth-child(3) {
-  top: 100;
-}
 
 .cube {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  transform-origin: 50% 50% 150px;
+  width: 18.75rem;
+  height: 18.75rem;
+  transform-origin: 50% 50% 9.375rem;
   transform-style: preserve-3d;
   transition: all 0.5s ease-out;
   /*background-color: beige;*/
@@ -76,9 +63,9 @@ html, body {
   display: flex; /* display: flex needed to center numbers */
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  font-size: 6.25rem;
   color: transparent; 
-  -webkit-text-stroke: 5px white;
+  -webkit-text-stroke: 0.313rem white;
 }
 
 .cube .face:nth-child(1) {
@@ -130,5 +117,5 @@ html, body {
   left: 20%;
   color: white;
   border-radius: 0%;
-  font-size: 15px;
+  font-size: 0.938rem;
 }
