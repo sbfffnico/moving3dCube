@@ -110,3 +110,25 @@ html, body {
   transform: rotateX(-90deg);
   background-color: rgba(160, 95, 137, 0.5);
 }
+
+.cube .face .fixOrientation {
+  position: absolute;
+  height: 8%;
+  width: 8%;
+  border-radius: 100%;
+  background-color: black;
+  top: 7.5%;
+  left: 85%;
+  cursor: pointer;
+  font-family: sans-serif;
+  -webkit-text-stroke: 0px;
+}
+
+.fa-wrench {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  color: white;
+  border-radius: 0%;
+  font-size: 15px;
+}
