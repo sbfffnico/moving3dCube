@@ -5,11 +5,9 @@ html, body {
   height: 100vh;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 * {
   box-sizing: border-box;
 }
-
 .canvas {
   position: relative;
   top: 0;
@@ -22,24 +20,6 @@ html, body {
   background-image: radial-gradient(ellipse, rgb(64,22,143) 0%, rgb(32,14,96) 40%, rgb(10,0,34) 100%);
   perspective: 850px; /* double check how perspective works */
 }
-
-.centerButton {
-  position: absolute;
-  top: 0;
-  left: 50vw;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  transform: translate(-50%);
-}
-.buttons {
-  position: absolute;
-  top: 0;
-  left: 50vw;
-  transform: translate(-50%);
-}
-
 .cube {
   position: absolute;
   width: 18.75rem;
@@ -52,8 +32,6 @@ html, body {
   /*for testing*/
   transform: rotateY(0deg) rotateZ(0deg);
 }
-
-
 .cube .face {
   position: absolute;
   top: 0;
@@ -67,7 +45,6 @@ html, body {
   color: transparent; 
   -webkit-text-stroke: 0.313rem white;
 }
-
 .cube .face:nth-child(1) {
   transform: translateZ(300px); /* check into translate Z */
   background-color: rgb(238, 141, 14, 0.5);
@@ -97,7 +74,6 @@ html, body {
   transform: rotateX(-90deg);
   background-color: rgba(160, 95, 137, 0.5);
 }
-
 .cube .face .fixOrientation {
   position: absolute;
   height: 8%;
@@ -110,7 +86,6 @@ html, body {
   font-family: sans-serif;
   -webkit-text-stroke: 0px;
 }
-
 .fa-wrench {
   position: absolute;
   top: 15%;
